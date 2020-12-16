@@ -7,27 +7,40 @@
 </head>
 <body>
     <h1>Mini-calcutrice</h1>
-    <input type="text" disabled>
-    <div> <!--tout le contenu de la calculatrice-->
-        <div> <!-- mes nombres-->
-            <button id = "nb1">1</button>
-            <button id = "nb2">2</button>
-            <button id = "nb3">3</button>
-            <button id = "nb4">4</button>
-            <button id = "nb5">5</button>
-            <button id = "nb6">6</button>
-            <button id = "nb7">7</button>
-            <button id = "nb8">8</button>
-            <button id = "nb9">9</button>
-            <button id = "nb0">0</button>
+    <input type="text"><!--affichage de mes nombres-->
+    <div id="contenu"><!-- tout le contenu de ma calculatrice-->
+        <div class="colors"> <!--tout le contenu de la calculatrice-->
+            <div> <!-- mes nombres-->
+                <div>
+                    <button id = "nb1">1</button>
+                    <button id = "nb2">2</button>
+                    <button id = "nb3">3</button>
+                </div>
+                <div>
+                    <button id = "nb4">4</button>
+                    <button id = "nb5">5</button>
+                    <button id = "nb6">6</button>
+                </div>
+                <button id = "nb7">7</button>
+                <button id = "nb8">8</button>
+                <button id = "nb9">9</button>
+                <button id = "nb0">0</button>
+            </div>
+            <div> <!--mes operateurs-->
+                <button id = "add">+</button>
+                <button id = "substr">-</button>
+                <button id = "multi">*</button>
+                <button id = "divi">/</button>
+            </div>
+            <div> <!--mes options-->        
+                <button id = "pt">.</button>
+                <button id = "egal">=</button>
+                <button id = "correction">C</button>
+                <input id = "check" type="checkbox">
+            </div>
         </div>
-        <div> <!--mes operateurs-->
-            <button id = "add">+</button>
-            <button id = "substr">-</button>
-            <button id = "multi">*</button>
-            <button id = "divi">/</button>
-            <button id = "egal">=</button>
-            <button id = "correction">C</button>
+        <div id="result"><!--affichage de mon resultat-->
+            <h1 class="resultStyle"></h1>
         </div>
     </div>
     <script src="./public/main.js"></script>
